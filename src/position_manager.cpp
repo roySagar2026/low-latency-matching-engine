@@ -47,7 +47,7 @@ void PositionManager::print_positions() const{
     for(const auto& [id, pos] : positions){
         std::cout << "Trader " << id
                   << " | Qty " << pos.net_qty
-                  << " | AvgPx " << pos.avg_price
+                  << " | AvgPrice " << pos.avg_price
                   << " | RealizedPnL " << pos.realized_pnl
                   << "\n";
     }
@@ -59,4 +59,5 @@ double PositionManager::tot_realized_pnl() const {
         total += pos.realized_pnl;
     }
     return total;
+
 }
