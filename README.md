@@ -43,6 +43,12 @@ low_latency_matching_engine/
 ├── CMakeLists.txt           # Build configuration
 └── README.md
 
+Run This
+mkdir build
+cd build
+cmake ..
+cmake --build .
+
 ⚡ Features
 Order Management: Supports buy/sell orders with price-time priority.
 Order Book: Efficient book keeping using OrderNodePool and OrderQueue.
@@ -92,3 +98,4 @@ Remove filled orders
       ↓
 
 Store remainder (if any)
+
